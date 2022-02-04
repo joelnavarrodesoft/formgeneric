@@ -1,7 +1,10 @@
 import bycrypt from "react-native-bcrypt";
 import isaac from "isaac";
 import { secret } from "../config";
-
+/**
+ * 
+ * This function encrypt the secret and info
+ */
 
 export const encryptData = () => {
     const salt2 = bycrypt.setRandomFallback((len) => {
